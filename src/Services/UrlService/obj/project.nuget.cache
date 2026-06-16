@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "qJan298wtVc=",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\SnipUrl\\src\\Services\\UrlService\\UrlService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kirtika jain\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.9\\microsoft.aspnetcore.openapi.10.0.9.nupkg.sha512",
+    "C:\\Users\\kirtika jain\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\kirtika jain\\.nuget\\packages\\scalar.aspnetcore\\2.16.3\\scalar.aspnetcore.2.16.3.nupkg.sha512"
+  ],
+  "logs": []
+}

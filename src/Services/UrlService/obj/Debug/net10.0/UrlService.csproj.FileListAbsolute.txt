@@ -1,0 +1,69 @@
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\appsettings.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\UrlService.staticwebassets.endpoints.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\UrlService.exe
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\UrlService.deps.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\UrlService.runtimeconfig.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\UrlService.dll
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\UrlService.pdb
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.csproj.AssemblyReference.cache
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.AssemblyInfoInputs.cache
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.AssemblyInfo.cs
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.csproj.CoreCompileInputs.cache
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.sourcelink.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\scopedcss\bundle\UrlService.styles.css
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.csproj.Up2Date
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.dll
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\refint\UrlService.dll
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.pdb
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.genruntimeconfig.cache
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\ref\UrlService.dll
+C:\Users\kirtika jain\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\Scalar.AspNetCore.dll
+D:\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\appsettings.Development.json
+D:\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\appsettings.json
+D:\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\UrlService.staticwebassets.endpoints.json
+D:\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\UrlService.exe
+D:\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\UrlService.deps.json
+D:\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\UrlService.runtimeconfig.json
+D:\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\UrlService.dll
+D:\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\UrlService.pdb
+D:\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\Microsoft.OpenApi.dll
+D:\Projects\SnipUrl\src\Services\UrlService\bin\Debug\net10.0\Scalar.AspNetCore.dll
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.csproj.AssemblyReference.cache
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.AssemblyInfoInputs.cache
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.AssemblyInfo.cs
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.csproj.CoreCompileInputs.cache
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\rjimswa.dswa.cache.json
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\scopedcss\bundle\UrlService.styles.css
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\staticwebassets.build.json
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\staticwebassets.build.json.cache
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\staticwebassets.development.json
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\swae.build.ex.cache
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.csproj.Up2Date
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.dll
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\refint\UrlService.dll
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.pdb
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\UrlService.genruntimeconfig.cache
+D:\Projects\SnipUrl\src\Services\UrlService\obj\Debug\net10.0\ref\UrlService.dll
