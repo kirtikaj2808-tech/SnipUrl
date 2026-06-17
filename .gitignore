@@ -1,0 +1,24 @@
+# Personal notes - do not push
+NOTES.md
+
+# .NET build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+.vs/
+
+# NuGet
+*.nupkg
+project.assets.json
+project.nuget.cache
+
+# Environment / secrets
+appsettings.Development.json
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
