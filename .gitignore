@@ -1,6 +1,16 @@
 # Personal notes - do not push
 NOTES.md
 
+# Documentation files (YARP Gateway docs)
+ARCHITECTURE.md
+DOCUMENTATION_INDEX.md
+IMPLEMENTATION_CHECKLIST.md
+QUICK_START.md
+README_GATEWAY.md
+YARP_CONCEPTS_EXPLAINED.md
+YARP_GATEWAY_GUIDE.md
+YARP_VISUAL_GUIDE.md
+
 # .NET build output
 bin/
 obj/
