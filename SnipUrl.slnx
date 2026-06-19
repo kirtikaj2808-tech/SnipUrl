@@ -3,7 +3,11 @@
     <Project Path="src/ApiGateway/ApiGateway.csproj" />
   </Folder>
   <Folder Name="/src/Services/">
+    <Project Path="src/Services/AnalyticsService/AnalyticsService.csproj" />
     <Project Path="src/Services/AuthService/AuthService.csproj" />
     <Project Path="src/Services/UrlService/UrlService.csproj" />
+  </Folder>
+  <Folder Name="/src/Shared/">
+    <Project Path="src/Shared/SnipUrl.Shared.Contracts/SnipUrl.Shared.Contracts.csproj" />
   </Folder>
 </Solution>

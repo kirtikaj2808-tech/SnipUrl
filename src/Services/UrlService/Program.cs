@@ -14,17 +14,19 @@ builder.Services.AddOpenApi();
 builder.Services.AddDbContext<UrlDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
- 
-// ── 3. Redis ───────────────────────────────────────────────────────────
+// ── 3. Add HttpClient for calling Analytics Service ───────────────────
+builder.Services.AddHttpClient();
+
+// ── 4. Redis ───────────────────────────────────────────────────────────
 // IConnectionMultiplexer is the main Redis connection object
 // It's registered as a Singleton — one shared connection for the whole app
 // (Multiplexer is designed to be shared, creating one per request is wasteful)
 var redisConnection = builder.Configuration.GetConnectionString("Redis")
     ?? "localhost:6379";
- 
+
 builder.Services.AddSingleton<IConnectionMultiplexer>(
     ConnectionMultiplexer.Connect(redisConnection));
- 
+
 // Register our cache service so it can be injected into endpoints
 builder.Services.AddScoped<RedisCacheService>();
  

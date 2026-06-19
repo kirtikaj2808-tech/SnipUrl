@@ -11,7 +11,9 @@ public static class RedirectEndpoint
         app.MapGet("/{code}", async (
             string code,
             RedisCacheService cache,   // injected by .NET automatically
-            UrlDbContext db) =>
+            UrlDbContext db,
+            IHttpClientFactory httpClientFactory,
+            HttpContext context) =>
         {
             // ── STEP 1: Check Redis first (cache-aside pattern) ──────────
             // This is the fast path — if the URL is cached, we never touch
@@ -20,7 +22,8 @@ public static class RedirectEndpoint
 
             if (cachedUrl is not null)
             {
-                // Cache HIT — return immediately, skip the database entirely
+                // Cache HIT — publish analytics event and return immediately
+                _ = PublishClickEvent(httpClientFactory, code, cachedUrl, context);
                 return Results.Redirect(cachedUrl);
             }
 
@@ -52,6 +55,9 @@ public static class RedirectEndpoint
             shortUrl.ClickCount++;
             await db.SaveChangesAsync();
 
+            // ── STEP 7: Publish analytics event (fire and forget) ───────────
+            _ = PublishClickEvent(httpClientFactory, code, shortUrl.OriginalUrl, context);
+
             return Results.Redirect(shortUrl.OriginalUrl);
         })
         .WithName("RedirectToUrl")
@@ -60,5 +66,47 @@ public static class RedirectEndpoint
         .Produces(StatusCodes.Status302Found)
         .Produces(StatusCodes.Status404NotFound)
         .Produces(StatusCodes.Status400BadRequest);
+    }
+
+    private static async Task PublishClickEvent(
+        IHttpClientFactory httpClientFactory,
+        string shortCode,
+        string originalUrl,
+        HttpContext context)
+    {
+        try
+        {
+            var httpClient = httpClientFactory.CreateClient();
+            var clickEvent = new
+            {
+                shortCode,
+                originalUrl,
+                clickedAt = DateTime.UtcNow,
+                ipAddress = context.Connection.RemoteIpAddress?.ToString(),
+                userAgent = context.Request.Headers["User-Agent"].ToString(),
+                referrer = context.Request.Headers["Referer"].ToString(),
+                deviceType = DetectDeviceType(context.Request.Headers["User-Agent"].ToString())
+            };
+
+            await httpClient.PostAsJsonAsync("http://localhost:5268/api/analytics/clicks", clickEvent);
+        }
+        catch (Exception ex)
+        {
+            // Log error but don't fail the redirect
+            Console.WriteLine($"[Analytics] Failed to publish click event: {ex.Message}");
+        }
+    }
+
+    private static string DetectDeviceType(string userAgent)
+    {
+        if (string.IsNullOrEmpty(userAgent))
+            return "Unknown";
+
+        var ua = userAgent.ToLower();
+        if (ua.Contains("mobile") || ua.Contains("android") || ua.Contains("iphone"))
+            return "Mobile";
+        if (ua.Contains("tablet") || ua.Contains("ipad"))
+            return "Tablet";
+        return "Desktop";
     }
 }

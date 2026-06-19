@@ -11,6 +11,11 @@ services:
       - "5432:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U snipurl -d snipurldb"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   redis:
     image: redis:7-alpine
@@ -20,7 +25,54 @@ services:
       - "6379:6379"
     volumes:
       - redis-data:/data
-
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: snipurl-rabbitmq
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: snipurl
+      RABBITMQ_DEFAULT_PASS: snipurl123
+    ports:
+      - "5672:5672"     # AMQP port — used by your .NET apps to connect
+      - "15672:15672"   # Management UI — visual dashboard in browser
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: snipurl-redis-ui
+    restart: unless-stopped
+    environment:
+      REDIS_HOSTS: local:redis:6379
+    ports:
+      - "8081:8081"
+    depends_on:
+      - redis
+  
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: snipurl-pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@snipurl.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+ 
 volumes:
   postgres-data:
   redis-data:
+  rabbitmq-data:
